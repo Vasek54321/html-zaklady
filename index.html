@@ -6,25 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prověrka</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <style>
     h1 {
-        text-align: center;
-    }
-    main {
-        width: 1200px;
-        margin: 20px auto;
-        border-radius: 25px;
-        border: 1px solid rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
-        padding: 20px;
-    }
-    h2 {
-        text-align: center;
-    }
-    h3 {
-        text-align: center;
-    }
+    text-align: center;
+}
+main {
+	width: 1200px;
+	margin: 20px auto;
+	border-radius: 25px;
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+}
+table, td, th {
+    border: 1px solid rgb(0, 0, 0);
+}
+img {
+    width: 200px;
+}
 </style>
 <main>
     <h1>Příprava na praktickou prověrku</h1>
@@ -62,44 +63,48 @@
     </section>
     <section id="tabulka">
         <h2>Tabulka</h2>
-        <thead>
-            <tr>
-                <th>Nečíslovaný seznam</th>
-                <th>Sportovec</th>
-                <th>Obrázek (šířka 200 px)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <ul>
-                        <li>IP adresa</li>
-                        <li>Jmenná adresa</li>
-                        <li>URL</li>
-                    </ul>
-                </td>
-                <td>Kimová</td>
-                <td class="text-center"><img src="img/USA.png" alt="Vlajka USA" class="flag"> USA</td>
-                <td class="text-right">94.00.</td>
-            </tr>
-            <tr class="silver">
-                <td class="text-center">2.</td>
-                <td>Tomitaová S.</td>
-                <td class="text-center"><img src="img/JPN.png" alt="Vlajka Japonska" class="flag"> Japonsko</td>
-                <td class="text-right">86.00.</td>
-            </tr>
-            <tr class="bronze">
-                <td class="text-center">3.</td>
-                <td>Cchaj</td>
-                <td class="text-center"><img src="img/CHN.png" alt="Vlajka Číny" class="flag"> Čína</td>
-                <td class="text-right">81.25</td>
-            </tr>
-        </tbody>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nečíslovaný seznam</th>
+                    <th>Prvky stránek</th>
+                    <th>Obrázek</th>
+                </tr>
+                <tr>
+                    <th>Značky</th>
+                    <th>entity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>IP adresa</li>
+                            <li>Jmenná adresa</li>
+                            <li>URL</li>
+                        </ul>
+                    </td>
+                    <td>H<sub>2</sub>O</td>
+                    <td>&</td>
+                    <td><img alt="" src="img/stahování.jpeg"></td>
+                </tr>
+                <tr>
+
+                    <td>c = a<sup>2</sup> + b<sup>2</sup></td>
+                    <td>&copy;</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Odkaz</td>
+                    <td><a href="https://www.w3schools.com/">www.w3c.org</a></td>
+                </tr>
+            </tfoot>
+        </table>
     </section>
     <footer>
         <hr />
         <p>© 2022: Jáchym Václav Hanke </p>
     </footer>
 </main>
-
 </html>
